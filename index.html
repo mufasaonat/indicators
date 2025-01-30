@@ -1,70 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRU Indicators</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRU Indicators</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="intro">
-            <h1 class="title">Welcome to Computer Science Curriculum</h1>
-            <p>In this course, we embark on an exciting journey through the world of computers, technology, and digital innovation. Whether you're a beginner or have some prior knowledge, this curriculum is designed to guide you through essential concepts, skills, and practical applications of computer science.</p>
-            <p>We will explore topics ranging from basic programming and data analysis to understanding the inner workings of websites, databases, and cutting-edge technologies like machine learning. You'll learn how to create solutions, think critically, and use technology responsibly and ethically in the modern world.</p>
-            <p>Get ready to dive into an engaging, hands-on learning experience where creativity and technical skills come together. This course is not just about understanding how computers work—it's about discovering how you can use them to solve real-world problems and make an impact!</p>
-        </div>
-        <div class="content">
-            <h1>Indicators</h1>
-            <div class="tab">
-                <button class="tablinks" onclick="openLevel(event, 'm1')">Mathayom 1</button>
-                <button class="tablinks" onclick="openLevel(event, 'm2')">Mathayom 2</button>
-                <button class="tablinks" onclick="openLevel(event, 'm3')">Mathayom 3</button>
-                <button class="tablinks" onclick="openLevel(event, 'm4')">Mathayom 4</button>
-                <button class="tablinks" onclick="openLevel(event, 'm5')">Mathayom 5</button>
-                <button class="tablinks" onclick="openLevel(event, 'm6')">Mathayom 6</button>
-              </div>
-            
-              <div id="m1" class="tabcontent">                
-                <p>Mathayom 1</p>
-                <object data="pdf/m1.pdf" type="" class="pdf" width="500" height="500"></object>
-              </div>
-              <div id="m2" class="tabcontent">                
-                <p>Mathayom 2</p>
-                <object data="pdf/m2.pdf" type="" class="pdf" width="500" height="500"></object>
-              </div>
-              <div id="m3" class="tabcontent">                
-                <p>Mathayom 3</p>
-                <object data="pdf/m3.pdf" type="" class="pdf" width="500" height="500"></object>
-              </div>
-              <div id="m4" class="tabcontent">                
-                <p>Mathayom 4</p>
-                <object data="pdf/m4.pdf" type="" class="pdf" width="500" height="500"></object>
-              </div>
-              <div id="m5" class="tabcontent">                
-                <p>Mathayom 5</p>
-                <object data="pdf/m5.pdf" type="" class="pdf" width="500" height="500"></object>
-              </div>
-              <div id="m6" class="tabcontent">                
-                <p>Mathayom 6</p>
-                <object data="pdf/m6.pdf" type="" class="pdf" width="500" height="500"></object>
-              </div>
-        </div>
+  <div class="container">
+    <div class="intro">
+      <h1 class="title">Welcome to Computer Science Curriculum</h1>
+      <p>In this course, we embark on an exciting journey through the world of computers, technology, and digital
+        innovation. Whether you're a beginner or have some prior knowledge, this curriculum is designed to guide you
+        through essential concepts, skills, and practical applications of computer science.</p>
+      <p>We will explore topics ranging from basic programming and data analysis to understanding the inner workings of
+        websites, databases, and cutting-edge technologies like machine learning. You'll learn how to create solutions,
+        think critically, and use technology responsibly and ethically in the modern world.</p>
+      <p>Get ready to dive into an engaging, hands-on learning experience where creativity and technical skills come
+        together. This course is not just about understanding how computers work—it's about discovering how you can use
+        them to solve real-world problems and make an impact!</p>
     </div>
-    <script>
-        function openLevel(evt, levelName) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-          document.getElementById(levelName).style.display = "block";
-          evt.currentTarget.className += " active";
-        }
-    </script>
+    <div class="content">
+      <h1>Indicators</h1>
+      <div class="tab">
+        <button class="tablinks" onclick="openLevel(event, 'm1')">Mathayom 1</button>
+        <button class="tablinks" onclick="openLevel(event, 'm2')">Mathayom 2</button>
+        <button class="tablinks" onclick="openLevel(event, 'm3')">Mathayom 3</button>
+        <button class="tablinks" onclick="openLevel(event, 'm4')">Mathayom 4</button>
+        <button class="tablinks" onclick="openLevel(event, 'm5')">Mathayom 5</button>
+        <button class="tablinks" onclick="openLevel(event, 'm6')">Mathayom 6</button>
+      </div>
+
+      <div id="m1" class="tabcontent">
+        <p>Mathayom 1</p>
+        <object data="pdf/m1.pdf" type="" class="pdf" width="500" height="500"></object>
+      </div>
+      <div id="m2" class="tabcontent">
+        <p>Mathayom 2</p>
+        <object data="pdf/m2.pdf" type="" class="pdf" width="500" height="500"></object>
+      </div>
+      <div id="m3" class="tabcontent">
+        <p>Mathayom 3</p>
+        <object data="pdf/m3.pdf" type="" class="pdf" width="500" height="500"></object>
+      </div>
+      <div id="m4" class="tabcontent">
+        <p>Mathayom 4</p>
+        <object data="pdf/m4.pdf" type="" class="pdf" width="500" height="500"></object>
+      </div>
+      <div id="m5" class="tabcontent">
+        <p>Mathayom 5</p>
+        <object data="pdf/m5.pdf" type="" class="pdf" width="500" height="500"></object>
+      </div>
+      <div id="m6" class="tabcontent">
+        <p>Mathayom 6</p>
+        <object data="pdf/m6.pdf" type="" class="pdf" width="500" height="500"></object>
+      </div>
+    </div>
+  </div>
+  <script>
+    function openLevel(evt, levelName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(levelName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
 </body>
+
 </html>
